@@ -1,7 +1,7 @@
 // **EXERCISE** Swapping Variables
 
-let a = 'red';
-let b = 'blue';
+let a = "red";
+let b = "blue";
 
 console.log(a);
 console.log(b);
@@ -14,4 +14,3 @@ b = c;
 
 console.log(a);
 console.log(b);
-

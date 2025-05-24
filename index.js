@@ -182,9 +182,9 @@ console.log(currentColour); // => blue
 console.log(1 | 2); // Bitwise OR => // R = 00000011 3
 console.log(1 & 2); // Bitwise OR => // R = 00000000 0
 
-// Read, Write, Execute 
-// Read 00000100 
-// Read Write 00000110 
+// Read, Write, Execute
+// Read 00000100
+// Read Write 00000110
 // Read Write Execute 00000111
 
 const readPermission = 4;
@@ -194,11 +194,11 @@ let myPermission = 0;
 myPermission = myPermission | readPermission | writePermission;
 console.log(myPermission);
 
-let message = (myPermission & readPermission) ? 'yes' : 'no';
+let message = myPermission & readPermission ? "yes" : "no";
 console.log(message);
 let myPermission2 = 0;
 myPermission2 = myPermission2 | writePermission;
-let message2 = (myPermission2 & readPermission) ? 'yes' : 'no';
+let message2 = myPermission2 & readPermission ? "yes" : "no";
 console.log(message2);
 
 // Operators Precedence
