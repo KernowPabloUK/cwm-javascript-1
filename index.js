@@ -174,7 +174,32 @@ currentColour = userColour || defaultColour;
 console.log(currentColour); // => blue
 
 // Javascript Operators - Bitwise
+// 0 = 00000000
+// 1 = 00000001
+// 2 = 00000010
+// 3 = 00000011
+
+console.log(1 | 2); // Bitwise OR => // R = 00000011 3
+console.log(1 & 2); // Bitwise OR => // R = 00000000 0
+
+// Read, Write, Execute 
+// Read 00000100 
+// Read Write 00000110 
+// Read Write Execute 00000111
+
+const readPermission = 4;
+const writePermission = 2;
+const executePermission = 1;
+let myPermission = 0;
+myPermission = myPermission | readPermission | writePermission;
+console.log(myPermission);
+
+let message = (myPermission & readPermission) ? 'yes' : 'no';
+console.log(message);
+let myPermission2 = 0;
+myPermission2 = myPermission2 | writePermission;
+let message2 = (myPermission2 & readPermission) ? 'yes' : 'no';
+console.log(message2);
 
 // Operators Precedence
-
-// **EXERCISE** Swapping Variables
+// PEDMAS
